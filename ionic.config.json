@@ -1,0 +1,8 @@
+{
+  "name": "BeeperCrzech",
+  "app_id": "2e1c3d4a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
