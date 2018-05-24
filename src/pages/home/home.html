@@ -1,14 +1,45 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      UMG Beeper
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div *ngIf="isUserLoggedIn" style="text-align: center">
+    <ion-grid>
+      <ion-row col-md-12 text-center>
+        <ion-col>
+          <img src="{{userInfo.imageUrl}}">
+        </ion-col>
+      </ion-row>
+      <ion-row col-md-12 text-center>
+        <ion-col>
+          <h3>{{userInfo.displayName}}</h3>
+        </ion-col>
+      </ion-row>
+      <ion-row col-md-12 text-center>
+        <ion-col>
+          <p>{{userInfo.email}}</p>
+        </ion-col>
+      </ion-row>
+      <ion-row col-md-12 text-center>
+        <ion-col>
+          <button ion-button color="secondary" (click)="gotoBeeper()">Beep!</button>
+        </ion-col>
+      </ion-row>
+      <ion-row col-md-12 text-center>
+        <ion-col>
+          <button ion-button clear (click)="logout()">Cerrar sesión</button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 </ion-content>
+<ion-footer *ngIf="!isUserLoggedIn">
+  <button ion-button block icon-start (click)="loginWithGP()">
+    <ion-icon name="logo-googleplus"></ion-icon>
+    Entrar con Google+
+  </button>
+</ion-footer>
