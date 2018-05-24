@@ -11,15 +11,15 @@ Simple Beeper made with ionic 3 for android devices:
 <ul>
   <li>
     Change line 58 of package.json
-    <pre>"REVERSED_CLIENT_ID": <<your_google_firebase_authentication_client_id>></pre>
+    <pre>"REVERSED_CLIENT_ID": your_google_firebase_authentication_client_id</pre>
   </li>
   <li>
     Change line 22 of src/providers/rest/rest.ts
-    <pre>Basic <<your_oneSignal_rest_api_key>></pre>
+    <pre>Basic your_oneSignal_rest_api_key</pre>
   </li>
   <li>
     Change line 31 of src/pages/beeper/beeper.ts
-    <pre>app_id: <<your_oneSignal_application_id>></pre>
+    <pre>app_id: your_oneSignal_application_id</pre>
   </li>
   <li>
     Change line
