@@ -8,7 +8,6 @@ Simple Beeper made with ionic 3 for android devices:
 - Using Google+ Authentication with firebase
 
 # Install for testing
-```html
 <ul>
   <li>
     Change line 58 of package.json
@@ -30,4 +29,3 @@ Simple Beeper made with ionic 3 for android devices:
     <pre>npm install</pre>
   </li>
 </ul>
-```
