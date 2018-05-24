@@ -16,11 +16,11 @@ Simple Beeper made with ionic 3 for android devices:
   </li>
   <li>
     Change line 22 of src/providers/rest/rest.ts
-    Basic <your_oneSignal_rest_api_key>
+    <pre>Basic <your_oneSignal_rest_api_key></pre>
   </li>
   <li>
     Change line 31 of src/pages/beeper/beeper.ts
-    app_id: <your_oneSignal_application_id>
+    <pre>app_id: <your_oneSignal_application_id></pre>
   </li>
   <li>
     Change line
