@@ -22,7 +22,6 @@ Simple Beeper made with ionic 3 for android devices:
     <pre>app_id: your_oneSignal_application_id</pre>
   </li>
   <li>
-    Change line
     Run on a command line:
     <pre>ionic state reset</pre>
     <pre>npm install</pre>
